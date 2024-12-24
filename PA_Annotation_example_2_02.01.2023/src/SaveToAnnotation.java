@@ -1,10 +1,10 @@
 import java.lang.annotation.*;
 
-@Inherited //говорит о том, что новая созданная аннотация будет передаваться по наследству
-@Target(value = {ElementType.TYPE, ElementType.FIELD, ElementType.METHOD}) //указывает к каким членам класса мы можем
-// аннтоцацию применять
-@Retention(value = RetentionPolicy.RUNTIME)// тип аннотации, в данном случае РАНТАЙМ (это значит она будет доступна для Рефлексии)
+@Inherited // говорить про те, що нова створена інструкція передаватиметься у спадок
+@Target(value = {ElementType.TYPE, ElementType.FIELD, ElementType.METHOD}) //вказує до яких членів класу ми можемо
+// антоцацію застосовувати
+@Retention(value = RetentionPolicy.RUNTIME)// тип анотації, у разі РАНТАЙМ (тобто вона буде доступна для Рефлексії)
 
-public @interface SaveToAnnotation { //куда сохранять
-    String fileParam1(); //декларируем строковый параметр аннотации
+public @interface SaveToAnnotation { //куди зберігати
+    String fileParam1(); //декларуємо рядковий параметр інструкції
 }
