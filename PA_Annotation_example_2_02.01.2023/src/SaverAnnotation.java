@@ -3,7 +3,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD) //указываем к каким членам класса мы можем применять аннотацию (к методам)
-@Retention(RetentionPolicy.RUNTIME) //тип аннотации доступный для рефлексии
-public @interface SaverAnnotation { //чем сохранять
+@Target(ElementType.METHOD) // вказуємо до яких членів класу ми можемо застосовувати анотацію (до методів)
+@Retention(RetentionPolicy.RUNTIME) // тип анотації доступний для рефлексії
+public @interface SaverAnnotation { // чим зберігати
 }
